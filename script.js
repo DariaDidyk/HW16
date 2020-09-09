@@ -3,6 +3,17 @@
 // сами при после объявления класса.
 // Методы самодукоментируемы, но если будут вопросы про то что они должны делать - в чат!)
 
+const units = [new Unit('Virus', 200, 500)]
+
+units.push(units[0].clone());
+
+console.log(units);
+
+
+const squad = new Squad(units);
+
+console.log(squad);
+
 // function MilitaryResource(type, health, distance, maxHealth, maxDistance) {
 //     this.type = type;
 //     this.health = health;
@@ -32,15 +43,3 @@
 // Squad.prototype.getReadyToMoveResources;
 // Squad.prototype.combineResources;
 // Squad.prototype.cloneResource;
-
-
-const units = [new Unit('Virus', 200, 500)]
-
-units.push(units[0].clone());
-
-console.log(units);
-
-
-const squad = new Squad(units);
-
-console.log(squad);

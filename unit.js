@@ -14,7 +14,7 @@ class Unit {
         this.health = this.maxHealth;
         this.distance = this.maxDistance;
     }
-    clone() { //вызывает ущу один конструктор
+    clone() { 
         return new Unit(this.type, this.maxHealth, this.maxDistance);
     }
 }
